@@ -1,0 +1,52 @@
+/f1_website
+│
+├── /backend
+│   ├── app.py                   # Flask app entry point
+│   ├── config.py                # DB configs
+│   ├── requirements.txt
+│
+│   ├── /models
+│   │   ├── __init__.py
+│   │   ├── driver.py
+│   │   ├── team.py
+│   │   ├── race.py
+│   │   └── user.py
+            predictions.py
+            results.py
+            shedule.py
+│
+│   ├── /routes
+│   │   ├── __init__.py
+│   │   ├── drivers.py
+│   │   ├── teams.py
+│   │   ├── races.py
+│   │   └── users.py
+            statistics.py
+            results.py
+            shedule.py
+│
+│   ├── /controllers
+│   │   ├── driver_controller.py
+│   │   ├── team_controller.py
+│   │   └── race_controller.py
+            statistics.py
+            results.py
+            shedule.py
+│
+│   ├── /static
+│   │   └── images, css, js
+│
+│   └── /templates
+│       └── HTML templates (Jinja2)
+│
+└── /frontend
+    ├── index.html               # Main landing page
+    ├── drivers.html
+    ├── teams.html
+    ├── standings.html
+    └── js/, css/ (if not using React)
+
+Use BeautifulSoup to scrape historical temperatures.
+Use pandas to process the data.
+Use scikit-learn to train a regression model.
+Predict the next value
